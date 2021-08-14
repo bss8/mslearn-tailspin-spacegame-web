@@ -29,3 +29,11 @@ Privacy information can be found at https://privacy.microsoft.com/en-us/
 
 Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
+
+
+### Additional Notes (Boris 8-14-21)
+
+https://docs.microsoft.com/en-us/learn/modules/run-quality-tests-build-pipeline/6-perform-code-coverage 
+`dotnet test --no-build --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./TestResults/Coverage/`
+
+The /p: flags tell coverlet which code coverage format to use and where to place the results.
